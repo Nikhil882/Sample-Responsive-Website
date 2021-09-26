@@ -1,0 +1,260 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(/fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(250, 191, 63);
+}
+
+.navbar .logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-left: 80px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nabvar ul li {
+    display: inline;
+    /* padding: 0 10px; */
+}
+
+.navbar ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 80px;
+    color: darkblue;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: #FFF;
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/Things-to-Do-in-Delhi-1-1080x480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-txt {
+    /* width: 50%; */
+    /* height: 100vh; */
+    padding: 0 25%;
+    padding-top: 150px;
+    line-height: 80px;
+    /* width: 50%; */
+}
+
+.banner-txt h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    background: linear-gradient(#FF9933, #FFFFFF, #138808);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-txt p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF;
+    padding: 0 15%;
+    padding-top: 20px;
+}
+
+.container {
+    padding: 50px 90px;
+}
+
+.about-img-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF9933;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-txt {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.about-txt h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-background-tricolor {
+    text-transform: uppercase;
+    color: #8e2ae0;
+}
+
+.btn-background-tricolor span {
+    position: absolute;
+    background: rgb(228, 45, 45);
+}
+
+.btn-background-tricolor span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.btn-background-tricolor:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.btn-background-tricolor span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.btn-background-tricolor:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn-background-tricolor span:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.btn-background-tricolor:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition-delay: 0.5s;
+}
+
+.btn-background-tricolor span:nth-child(4) {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.btn-background-tricolor:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-delay: 0.5s;
+}
+
+
+/* .btn-background-tricolor {
+    text-transform: uppercase;
+    color: #1b1bdd;
+    background: cyan;
+    z-index: 1;
+}
+
+.btn-background-tricolor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 14px;
+    z-index: -1;
+    background: #FF9933;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-background-tricolor::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 14px;
+    z-index: -1;
+    background: #138808;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-background-tricolor:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-background-tricolor:hover::after {
+    transform: scaleX(1);
+} */
