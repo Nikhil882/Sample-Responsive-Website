@@ -11,10 +11,16 @@
 </head>
 
 <body>
+    <!---------------- START - Navigation Section -------------->
     <nav class="navbar">
         <div class="logo">
-            <a href="#">PortFolio</a>
+            <a href="#">Portfolio</a>
         </div>
+        <a class="hamburger" href="#">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
         <div class="nav-links">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -25,7 +31,9 @@
             </ul>
         </div>
     </nav>
+    <!---------------- END - Navigation Section -------------->
 
+    <!------------------ START - Home Section ------------------>
     <section id="Home">
         <div class="banner">
             <div class="banner-txt">
@@ -34,12 +42,13 @@
             </div>
         </div>
     </section>
+    <!--------------------- END - Home Section ------------------>
 
+    <!------------------- START - About Section ----------------->
     <section id="about">
-        <!-- <div class="container"> -->
         <div class="about-img-txt">
             <div class="about-img">
-                <img src="/images/india-gate.jpg" alt="india-gate">
+                <img src="images/india-gate.jpg" alt="india-gate">
             </div>
             <div class="about-txt">
                 <h2>ABOUT</h2>
@@ -48,18 +57,250 @@
                     explicabo accusantium deserunt quam dolor, sit voluptatibus, corrupti repellendus, blanditiis facilis laboriosam natus excepturi ad? Dolorum
                 </p>
 
-                <button class="btn btn-background-tricolor">
-                    <span></span> 
-                    <span></span> 
-                    <span></span> 
-                    <span></span> 
+                <button class="btn btn-hover-border">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     Know More
                 </button>
             </div>
 
         </div>
+    </section>
+    <!------------------- END - About Section ------------------>
+
+    <!------------------ START - Gallery Section ---------------->
+    <section id="gallery">
+        <div class="container">
+            <div class="header">
+                <h2>Places To Visit</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card simple-card">
+                        <div class="img-cont">
+                            <img src="images/taj-mahal--agra-india.jpg" alt="Taj Mahal">
+                        </div>
+                    </div>
+                    <div class="card simple-card">
+                        <div class="img-cont">
+                            <img src="images/fatehpur-sikri.jpg" alt="Fatehpur Sikri">
+                        </div>
+                    </div>
+                    <div class="card simple-card">
+                        <div class="img-cont">
+                            <img src="images/qutub-minar.jpg" alt="Qutub Minar">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-with-txt">
+                        <div class="img-cont">
+                            <img src="images/khajuraho.jpg" alt="Khajuraho Temple">
+                        </div>
+                        <div class="card-txt">
+                            <h4>Khajuraho Temple</h4>
+                        </div>
+                    </div>
+                    <div class="card card-with-txt">
+                        <div class="img-cont">
+                            <img src="images/baidyanath-dham.jpg" alt="Baidyanath Dham">
+                        </div>
+                        <div class="card-txt">
+                            <h4>Baidyanath Dham</h4>
+                        </div>
+                    </div>
+                    <div class="card card-with-txt">
+                        <div class="img-cont">
+                            <img src="images/hawa-mahal.jpg" alt="Hawa Mahal">
+                        </div>
+                        <div class="card-txt">
+                            <h4>Hawa Mahal</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-overlap simple-card">
+                        <div class="img-cont">
+                            <img src="images/Lotus-Temple-Delhi.jpg" alt="Lotus Temple">
+                        </div>
+                        <div class="overlay">
+                            <div class="text">Lotus Temple</div>
+                        </div>
+                    </div>
+                    <div class="card card-overlap simple-card">
+                        <div class="img-cont">
+                            <img src="images/red-fort.jpg" alt="Red Fort">
+                        </div>
+                        <div class="overlay">
+                            <div class="text">Red Fort</div>
+                        </div>
+                    </div>
+                    <div class="card card-overlap simple-card">
+                        <div class=" img-cont ">
+                            <img src="images/1280px-Gateway_of_India_-Mumbai.jpg" alt="Gateway of India ">
+                        </div>
+                        <div class="overlay">
+                            <div class="text">Gateway of India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!------------------ END - Gallery Section ---------------->
+
+    <!------------------ START - Contact Section --------------->
+    <section id="contact">
+        <div class="container">
+            <div class="header">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact1">
+
+                <form action="#">
+                    <div class="form-element">
+                        <input type="name" placeholder="Name">
+                    </div>
+                    <div class="form-element">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-element">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-element">
+                        <textarea name="message" cols="10" rows="5" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact2">
+                <form action="#" class="form-row">
+                    <div class="form-left">
+                        <div class="form-element">
+                            <input type="name" placeholder="Name">
+                        </div>
+                        <div class="form-element">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-element">
+                            <input type="tel" placeholder=" Contact Number">
+                        </div>
+                        <div class="form-element">
+                            <input type="date" placeholder="Date">
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <div class="form-element">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-element">
+                            <textarea name="message" cols="10" rows="5" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact3">
+                <div class="form-left">
+                    <form action="#">
+                        <div class="form-element">
+                            <input type="name" placeholder="Name">
+                        </div>
+                        <div class="form-element">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-element">
+                            <textarea name="message" cols="20" rows="5" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-right phone-mail">
+                    <div class="mobile-no">
+                        <a href="tel: 98214417">
+                            <i class="fas fa-phone-alt"></i> 98214417
+                        </a>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto: nikhilvaishya@gmail.com">
+                            <i class="fas fa-envelope"></i> nikhilvaishya@gmail.com
+                        </a>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711419.829385255!2d64.43134076828144!3d20.01050333078031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1632694454592!5m2!1sen!2sin"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------ END - Contact Section --------------->
+
+    <!--------------------- START - Footer ------------------>
+    <section id="footer">
+        <div class="container">
+            <div class="col">
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="foot-logo">
+                    India
+                </div>
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square"></i>Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------- END - Footer ------------------>
+
+    <!-------------------- Font Awesome Pack ------------------>
+    <script src="https://kit.fontawesome.com/eba75f5ff1.js" crossorigin="anonymous"></script>
+
+    <!--------------- Responsive Navigation Bar JS -------------->
+    <script>
+        const toggleNavbar = document.getElementsByClassName('nav-links')[0]
+        const toggleHamburger = document.getElementsByClassName('hamburger')[0]
+
+        toggleHamburger.addEventListener('click', () => {
+            toggleNavbar.classList.toggle('active')
+        })
+    </script>
 </body>
 
 </html>
