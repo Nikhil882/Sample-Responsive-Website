@@ -76,8 +76,12 @@
             <div class="header">
                 <h2>Places To Visit</h2>
             </div>
+            <div class="tab-container">
+                <button class="tab" onclick="showTab1()">Tab 1</button>
+                <button class="tab" onclick="showTab2()">Tab 2</button>
+            </div>
             <div class="row">
-                <div class="col">
+                <div class="col col1">
                     <div class="card simple-card">
                         <div class="img-cont">
                             <img src="images/taj-mahal--agra-india.jpg" alt="Taj Mahal">
@@ -94,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col2">
                     <div class="card card-with-txt">
                         <div class="img-cont">
                             <img src="images/khajuraho.jpg" alt="Khajuraho Temple">
@@ -120,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col3">
                     <div class="card card-overlap simple-card">
                         <div class="img-cont">
                             <img src="images/Lotus-Temple-Delhi.jpg" alt="Lotus Temple">
@@ -301,6 +305,8 @@
             toggleNavbar.classList.toggle('active')
         })
     </script>
+
+    <script src="/js/tabs.js"></script>
 </body>
 
 </html>
